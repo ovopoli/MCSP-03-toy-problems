@@ -22,5 +22,20 @@
  */
 
 Array.prototype.isSubsetOf = function(arr) {
-  // your code here
+  // loop through given arr
+  for(let key of arr) {
+  // loop through context arr (this) ???
+  
+  // check if key in input arr is the same as a key in the arr the method is being applied towards
+  if(key === this[key]) {
+    // if the same return true
+    return true;
+    // if not return false
+  } else {
+      return false;
+    }
+  };
 };
+
+let a = ['reset', 'push'];
+console.log(a.isSubsetOf(['push', 'add', 'reset', 'commit']));
