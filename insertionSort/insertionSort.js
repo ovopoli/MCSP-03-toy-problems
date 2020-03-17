@@ -46,6 +46,11 @@ var testingTransform = function(array) {
 };
 
 var insertionSort = function(array) {
-  // Your code goes here. Feel free to add helper functions if needed.
+  for (i = 0; i < array.length; i++) {
+    let set = array[i].value;
+    if(set > array[i + 1].value) {
+      let transArray = set.push(array[i]);
+    }
+  }
   return array;
 };
