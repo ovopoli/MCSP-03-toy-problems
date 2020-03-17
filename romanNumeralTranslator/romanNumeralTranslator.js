@@ -26,6 +26,21 @@ var DIGIT_VALUES = {
   M: 1000
 };
 
-var translateRomanNumeral = function(romanNumeral) {
-  // TODO: Implement me!
+var translateRomanNumeral = function (romanNumeral) {
+  //return this value of the romanNumeral string
+  const romanValue = 0;
+  
+  if (romanNumeral !== '') {
+      return null;
+  };
+  
+  for (let i = 0; i < romanNumeral.length; i++) {
+    if (romanNumeral[i] === DIGIT_VALUES) {
+      romanValue += DIGIT_VALUES
+    }
+    return romanValue;
+  }
+
+  translateRomanNumeral('IV');
 };
+
